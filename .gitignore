@@ -1,0 +1,4 @@
+.DS_Store
+.nvimlog
+.prettierrc
+node_modules

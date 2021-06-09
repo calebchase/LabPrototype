@@ -1,0 +1,219 @@
+<!DOCTYPE >
+
+<html>
+    <head>
+        <title>cytoscape prototype</title>
+        <meta charset="utf-8" />
+        <meta
+        name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1"
+        />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="dist/example.bundle.js"></script>
+        <style>
+body {
+    font-family: 'Calibri';
+    font-size: 14px;
+    overflow: hidden;
+}
+
+            #cy {
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                z-index: 1;
+            }
+
+            #ids {
+                position: absolute;
+                left: 0;
+                top: 1vh;
+                bottom: 50vh;
+                right: 90vw;
+                z-index: 2;
+            }
+
+            .idContainer {
+                width: 10vw;
+                height:5vh;
+                z-index: 2;
+            }
+
+            .idButton {
+                text-align: center;
+                margin: auto;
+                vertical-align: middle;
+                line-height: 4vh;
+                text-align: center;
+                border-radius: 1vw;
+                width: 9vw;
+                height:4vh;
+                background-color: lightgrey;
+            }
+
+            .selected {
+                background-color: lightblue;
+            }
+
+            .idButton:hover {
+                border-color: black;
+                border-style: solid;
+            }
+
+            h1 {
+                font-size: 1em;
+                font-family: 'Calibri';
+            }
+            img {  
+                width: 70;
+            }
+
+            .smallFont {
+                font-size: 80%;
+            }
+
+            .largeFont {
+                font-size: 160%;
+                font-weight: bold;
+            }
+
+            .font {
+                font-size: 30;
+            }
+
+            .main-container {
+                display: flex;
+                width: 100%;
+                height: 75%;
+                max-height: 75%;
+            }
+
+            .left-container {
+                flex: 0 1 30%;
+                min-height: 100%;
+            }
+
+            .right-container {
+                flex: 0 1 70%;
+                display: flex;
+                height: 100%;
+                max-width: 90%;
+                flex-wrap: wrap;
+                align-items: flex-start;
+            }
+
+            .half-containers {
+                word-wrap: break-word;
+                flex: 0 0 100%;
+                max-height: 50%;
+                min-height: 50%;
+                max-width: 100%;
+                text-align: left;
+            }
+
+            .iconHeight {
+                color: darkblue;
+                left: 4;
+                position: absolute;
+                top: 0;
+                font-size: 12;
+            }
+
+            .material-event {
+                font-size: 12px;
+                vertical-align: bottom;
+                line-height: 1.3;
+            }
+
+            .cardField {
+                height: 10;
+                margin-top: 0;
+            }
+
+            .eventTitle {
+                height: 25;
+                line-height: 9px;
+                vertical-align: middle;
+            }
+
+            .htmlPerson {
+                content-visibility: auto;
+                border-radius: 0px;
+                width: 75;
+                height: 115;
+                font-size: 10;
+                text-align: center;
+                padding-top: 2;
+                padding-right: 2;
+                padding-bottom: 2;
+                padding-left: 2;
+            }
+
+            .htmlEvent {
+                content-visibility: auto;
+                border-radius: 0px;
+                width: 150;
+                height: 30;
+                font-size: 10;
+                text-align: center;
+                padding-top: 2;
+                padding-right: 2;
+                padding-bottom: 2;
+                padding-left: 2;
+            }
+
+            .htmlidentifier {
+                content-visibility: auto;
+                border-radius: 0px;
+                width: 75;
+                height: 60;
+                font-size: 10;
+                text-align: center;
+                padding-top: 2;
+                padding-right: 2;
+                padding-bottom: 2;
+                padding-left: 2;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="ids">
+
+            <div class=idContainer>
+                <div id="ele-person-0" class="idButton">test</div>
+            </div>
+            <div class=idContainer>
+                <div id="ele-person-1"class="idButton">test</div>
+            </div>
+            <div class=idContainer>
+                <div id="ele-person-2"class="idButton">test</div>
+            </div>
+            <div class=idContainer>
+                <div id="ele-person-3"class="idButton">test</div>
+            </div>
+            <div class=idContainer>
+                <div id="ele-person-4"class="idButton">test</div>
+            </div>
+            <div class=idContainer>
+                <div id="ele-person-5"class="idButton">test</div>
+            </div>
+            <div class=idContainer>
+                <div id="ele-person-6"class="idButton">test</div>
+            </div>
+            <div class=idContainer>
+                <div id="ele-person-7"class="idButton">test</div>
+            </div>
+            <div class=idContainer>
+                <div id="ele-person-8"class="idButton">test</div>
+            </div>
+            <div class=idContainer>
+                <div id="ele-person-9"class="idButton">test</div>
+            </div>
+
+        </div>
+        <div id="cy"></div>
+    </body>
+</html>
